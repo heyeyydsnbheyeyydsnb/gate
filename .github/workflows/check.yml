@@ -1,6 +1,8 @@
 name: VPN Gate Node Check
 
 on:
+  repository_dispatch:
+    types: [refresh]
   workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"
